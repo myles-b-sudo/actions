@@ -7,8 +7,10 @@ jobs:
   basic-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: first step
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: second step
         run: |
-          echo "This is the first step of the workflow" > first_step.txt
-          cat testo 
-      
+          ls -la
+          cat testo
