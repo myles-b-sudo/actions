@@ -13,4 +13,5 @@ jobs:
       - name: second step
         run: |
           ls -la
+          cat testo.txt
           
