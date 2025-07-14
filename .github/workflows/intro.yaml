@@ -10,5 +10,5 @@ jobs:
       - name: first step
         run: |
           echo "This is the first step of the workflow" > first_step.txt
-          echo testo 
+          cat testo 
       
