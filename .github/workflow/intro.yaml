@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first step
-        run: echo "This is the first step of the workflow."
+        run: echo "This is the first step of the workflow." >hello.txt
       
+      - name: second step
+        run: cat hello.txt
        
 
